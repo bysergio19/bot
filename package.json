@@ -1,55 +1,62 @@
 {
-	"name": "@eartharoid/discordtickets",
-	"version": "2.1.3",
+	"name": "@eartharoid/discord-tickets",
+	"version": "3.0.0",
 	"private": true,
-	"description": "An open-source & self-hosted Discord bot for ticket management.",
+	"description": "An open-source Discord bot for ticket management",
 	"main": "src/index.js",
-	"dependencies": {
-		"@eartharoid/dtf": "^1.0.8",
-		"boxen": "^5.0.0",
-		"discord.js": "^12.5.1",
-		"dotenv": "^8.2.0",
-		"leekslazylogger": "^2.0.7",
-		"n-readlines": "^1.0.1",
-		"node-fetch": "^2.6.1",
-		"sequelize": "^6.5.0",
-		"terminal-link": "^2.1.1",
-		"to-time-monthsfork": "^1.1.3"
-	},
-	"optionalDependencies": {
-		"sqlite3": "^5.0.0"
-	},
-	"peerDependencies": {
-		"mysql2": "2.x",
-		"mariadb": "2.x",
-		"pg": "8.x",
-		"tedious": "9.x"
-	},
-	"devDependencies": {
-		"eslint": "^7.18.0",
-		"nodemon": "^2.0.7"
-	},
 	"scripts": {
 		"start": "node src/",
 		"test": "echo \"Nothing to test! Run with 'npm start'\" && exit 1"
 	},
 	"engines": {
-		"node": ">=12"
+		"node": ">=14"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/eartharoid/DiscordTickets.git"
+		"url": "git+https://github.com/discord-tickets/bot.git"
 	},
 	"keywords": [
 		"discord",
-		"bot",
-		"tickets"
+		"tickets",
+		"bot"
 	],
 	"author": "eartharoid",
 	"license": "GPL-3.0",
 	"bugs": {
-		"url": "https://github.com/eartharoid/DiscordTickets/issues"
+		"url": "https://github.com/discord-tickets/bot/issues"
 	},
-	"homepage": "https://github.com/eartharoid/DiscordTickets/#readme",
-	"funding": "https://github.com/eartharoid/DiscordTickets/?sponsor=1"
+	"homepage": "https://discordtickets.app",
+	"funding": "https://github.com/discord-tickets/bot/?sponsor=1",
+	"dependencies": {
+		"@eartharoid/i18n": "^1.0.0",
+		"boxen": "^5.0.0",
+		"cryptr": "^6.0.2",
+		"discord.js": "^12.5.1",
+		"dotenv": "^8.2.0",
+		"leeks.js": "^0.0.9",
+		"leekslazylogger-fastify": "^0.1.0",
+		"node-fetch": "^2.6.1",
+		"semver": "^7.3.4",
+		"sequelize": "^6.5.0",
+		"terminal-link": "^2.1.1"
+	},
+	"devDependencies": {
+		"eslint": "^7.21.0",
+		"mariadb": "^2.5.2",
+		"mysql2": "^2.2.5",
+		"nodemon": "^2.0.7",
+		"pg": "^8.5.1",
+		"pg-hstore": "^2.3.3",
+		"tedious": "^11.0.3"
+	},
+	"optionalDependencies": {
+		"sqlite3": "^5.0.2"
+	},
+	"peerDependencies": {
+		"mariadb": "^2.5.2",
+		"mysql2": "^2.2.5",
+		"pg": "^8.5.1",
+		"pg-hstore": "^2.3.3",
+		"tedious": "^11.0.3"
+	}
 }
