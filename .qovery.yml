@@ -1,0 +1,15 @@
+---
+application:
+  name: "bot"
+  project: "Ticket Bot GalaxyNodes"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "tickets"
+  version: "12"
+routers:
+- name: "main-bot"
+  routes:
+  - application_name: "bot"
+    paths:
+    - "/*"
